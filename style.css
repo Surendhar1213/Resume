@@ -1,0 +1,208 @@
+body,html{
+    font-family:"Roboto",sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.light-gray{
+    background-color: #f1f1f1;
+}
+.content {
+    max-width: 1400px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row-pading {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+.left-column, .right-column {
+    flex: 1;
+    padding: 10px;
+
+}
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 40x 8px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+.container{
+    margin-bottom: 20px;
+    
+}
+.display-container{
+    position: relative;
+    text-align: center;
+}
+.avator{
+    width: 100%;
+}
+.display-bottomleft{
+    position:absolute;
+    bottom: 10px;
+    left: 10px;
+    color:rgb(72, 71, 71);
+}
+.name {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    
+    /* Animation */
+    opacity: 0;
+    transform: scale(0.8);
+    animation: zoomGlow 1.5s ease-out forwards;
+}
+
+/* Default Name Styling */
+.name {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Dark Shadow for better visibility */
+    
+    /* Animation */
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInSlide 1.5s ease-out forwards;
+}
+
+/* Keyframes */
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Laptop View - Adjust for White Background */
+@media (min-width: 1024px) {
+    .name {
+        color: #f1f1f1; /* Slightly off-white */
+        text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8); /* Stronger shadow */
+    }
+}
+
+/* Mobile View - Keep It Simple */
+@media (max-width: 768px) {
+    .name {
+        text-shadow: none; /* Remove shadow for a clean mobile view */
+        font-size: 27px;
+        text-align: center;
+        margin-left: 30px;
+    }
+}
+
+.icon {
+    margin: 10px;
+}
+.large-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+.skill-bar {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    margin: 5px 0;
+}
+.skill-teal {
+    background-color: #009688;
+    height: 20px;
+    border-radius: 20px;
+    text-align: center;
+    color: rgb(41, 40, 40);
+    line-height: 20px;
+}
+.job-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.job-dates {
+    font-size: 1.2rem;
+    color: #00769b;
+}
+
+.teal-text {
+    color: #009688;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+.footer {
+    position: relative;
+    z-index: 1000; /* Ensures it's above other content */
+}
+.footer i{
+    font-size: 24px;
+    margin: 5px;
+    cursor: pointer;
+    color: white;
+}
+.footer i:hover {
+    color: #00aced; /* Twitter Blue */
+}
+
+
+/*  */
+* Right Column Styling */
+.right-column {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Card Styling */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Title Styles */
+h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    color: #444;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+h5 {
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.grey-text.icon{
+    padding: 10px;
+    margin: 5px;
+}
+
+
+
+
